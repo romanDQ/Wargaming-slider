@@ -1,0 +1,44 @@
+.container {
+  max-width: 1920px;
+  min-width: 320px;
+  margin: 0px auto;
+  background-color: $color-dark-brown;
+}
+
+.content {
+  display: flex;
+  position: relative;
+
+  @media only screen and (max-width: 1250px) {
+    flex-direction: column;
+  }
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+
+  &__heading {
+    top: 35px;
+    position: absolute;
+    text-align: center;
+    color: $color-beige;
+    text-transform: uppercase;
+    font-size: 85px;
+    font-weight: 700;
+    z-index: 3;
+
+    @media only screen and (max-width: 600px) {
+      font-size: 60px;
+    }
+
+    @media only screen and (max-width: 450px) {
+      font-size: 40px;
+      line-height: 37px;
+      width: 200px;
+      overflow-wrap: break-word;
+      word-wrap: break-word;
+      word-break: break-word;
+    }
+  }
+}
