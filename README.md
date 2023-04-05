@@ -1,1 +1,1 @@
-﻿# Wargaming slider
+﻿# Responsive Wargaming slider
